@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juris Solution | Home</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<style>
+  /* index bannner carousel */
+
+
+
+
+  .law-banner {
+    /* padding:15px; */
+    overflow: hidden;
+  }
+
+  /* SLIDER BOX */
+
+  #lawSlider {
+    /* border-radius:14px; */
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    background: #fff;
+  }
+
+  /* IMAGES */
+
+  .law-slide-img {
+    height: 78vh;
+    object-fit: cover;
+    filter: brightness(.65);
+  }
+
+  /* CAPTION */
+
+  .carousel-caption {
+
+    text-align: left;
+    max-width: 650px;
+  }
+
+  .carousel-caption span {
+    background: rgba(255, 255, 255, .15);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    display: inline-block;
+    backdrop-filter: blur(8px);
+    color: #fff;
+    letter-spacing: .5px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 58px;
+    font-weight: 700;
+    margin: 20px 0;
+    line-height: 1.2;
+  }
+
+  .carousel-caption p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+  }
+
+  /* BUTTON */
+
+  .carousel-caption button {
+    border: none;
+    padding: 14px 32px;
+    background: #2874f0;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: .3s;
+  }
+
+  .carousel-caption button:hover {
+    background: #0f5bd3;
+  }
+
+  /* FLIPKART STYLE ARROWS */
+
+  .law-arrow {
+    width: auto;
+    opacity: 1;
+  }
+
+  .law-arrow-box {
+    width: 42px;
+    height: 90px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: #111;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, .12);
+    transition: .3s;
+  }
+
+  .law-arrow-box:hover {
+    background: #f5f5f5;
+  }
+
+  .carousel-control-prev {
+    left: 0;
+  }
+
+  .carousel-control-next {
+    right: 0;
+  }
+
+  .carousel-control-prev .law-arrow-box {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .carousel-control-next .law-arrow-box {
+    border-radius: 10px 0 0 10px;
+  }
+
+  /* SMALL FLIPKART STYLE DOTS */
+
+  .carousel-indicators {
+    bottom: 12px;
+  }
+
+  .carousel-indicators button {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50%;
+    border: none !important;
+    background: #d6d6d6 !important;
+    margin: 0 4px !important;
+    opacity: 1 !important;
+  }
+
+  .carousel-indicators .active {
+    background: #2874f0 !important;
+    width: 22px !important;
+    border-radius: 20px !important;
+  }
+
+  /* MOBILE */
+  @media(max-width:768px) {
+
+    .law-slide-img {
+      height: 52vh;
+    }
+
+    /* CENTER CONTENT */
+
+    .carousel-caption {
+      left: 50%;
+      top: 50%;
+      bottom: auto;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 90%;
+      max-width: 90%;
+      padding: 0 10px;
+    }
+
+    .carousel-caption span {
+      font-size: 11px;
+      padding: 6px 14px;
+    }
+
+    .carousel-caption h1 {
+      font-size: 24px;
+      line-height: 1.3;
+      margin: 14px 0;
+    }
+
+    .carousel-caption p {
+      font-size: 12px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .carousel-caption button {
+      padding: 10px 18px;
+      font-size: 12px;
+    }
+
+    /* SMALL ARROWS */
+
+    .law-arrow-box {
+      height: 60px;
+      width: 30px;
+      font-size: 16px;
+    }
+
+    /* SMALL DOTS */
+
+    .carousel-indicators button {
+      width: 6px !important;
+      height: 6px !important;
+    }
+
+    .carousel-indicators .active {
+      width: 16px !important;
+    }
+
+  }
+
+
+
+  /* index bannner carousel */
+</style>
+
+<body>
+
+
+  <header id="header" class="sticky-top"></header>
+
+
+  <!-- ===== BANNER SLIDER ===== -->
+  <section class="law-banner ">
+
+    <div id="lawSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+
+          <img src="images/updated1.webp" class="d-block w-100 law-slide-img">
+
+          <div class="carousel-caption ">
+
+            <span>Trusted Legal Services</span>
+
+            <h1>
+              Protect Your Rights <br>
+              With Expert Lawyers
+            </h1>
+
+            <p>
+              Professional legal consultation for civil,
+              criminal, family & corporate matters.
+            </p>
+
+            <button>
+              Get Consultation
+            </button>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+      
+
+      
+
+    </div>
+
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+
+  <section class="services-section py-5">
+    <div class="container">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-md-6">
+          <div class="intro-left">
+            <span class="welcome">WELCOME</span>
+            <h2>
+              Reputation.<br />
+              Respect.<br />
+              Result.
+            </h2>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-md-0 mt-4">
+          <div class="intro-right">
+            <p>
+              We understand that legal issues can be some of the most
+              challenging and stressful experiences in life. Whether you are
+              dealing with a complex family matter, facing criminal charges,
+              or navigating business law, our mission is to provide expert
+              legal guidance.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row gy-4 mt-4">
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="service-card" data-aos="fade-up" onclick="location.href = 'services.html'">
+            <img src="images/legalimage.jpg" alt="Services" />
+            <div class="service-overlay">
+              <h3><i class="fas fa-scale-balanced"></i> Services</h3>
+              <p>
+                Expert legal solutions tailored to protect your rights and
+                interests.
+              </p>
+              <a href="javascript:void(0)">Read More</a>
+            </div>
+            <div class="service-title">Services</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="service-card" data-aos="fade-up" onclick="location.href = 'rera_complaint.html'">
+            <img src="images/RERA Compliance.jpg" alt="RERA Compliance" />
+            <div class="service-overlay">
+              <h3><i class="fas fa-building"></i> Rera Services</h3>
+              <p>Complete Rera support for buyers, builders & developers.</p>
+              <a href="javascript:void(0)">Read More</a>
+            </div>
+            <div class="service-title">Rera Services</div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="service-card" data-aos="fade-up" onclick="location.href = 'debt_settlement.html'">
+            <img src="images/debt-settle.jpg" alt="Debt Settlement" />
+            <div class="service-overlay">
+              <h3>
+                <i class="fas fa-hand-holding-dollar"></i> Debt Settlement
+              </h3>
+              <p>
+                Relief from financial stress with professional debt solutions.
+              </p>
+              <a href="javascript:void(0)">Read More</a>
+            </div>
+            <div class="service-title">Debt Settlement</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+
+  <section class="experience-section container-fluid p-0">
+    <div class="row g-0">
+      <!-- LEFT IMAGE -->
+      <div class="col-lg-5 experience-image d-none d-lg-block">
+        <img src="images/legalimage.jpg" class="img-fluid w-100 h-100 object-fit-cover" />
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="col-lg-7 experience-content">
+        <div class="m-sm-5 m-3" data-aos="fade-right">
+          <span class="exp-label">EXPERIENCES</span>
+
+          <h2>Let Our Experience<br />Be Your Guide</h2>
+
+          <!-- TABS -->
+          <ul class="nav exp-tabs" id="expTabs" role="tablist">
+            <li class="nav-item">
+              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#attorneys">
+                Our Attorneys
+              </button>
+            </li>
+
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#expertise">
+                Our Expertise
+              </button>
+            </li>
+
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#firm">
+                Our Firm
+              </button>
+            </li>
+          </ul>
+
+          <!-- TAB CONTENT -->
+          <div class="tab-content mt-3">
+            <div class="tab-pane fade show active" id="attorneys">
+              <p>
+                Our attorneys are the cornerstone of our commitment to
+                providing exceptional Services with deep experience and
+                dedication.
+              </p>
+            </div>
+
+            <div class="tab-pane fade" id="expertise">
+              <p>
+                We specialize in civil litigation, corporate law, Rera
+                Complaint, debt settlement, and advisory services.
+              </p>
+            </div>
+
+            <div class="tab-pane fade" id="firm">
+              <p>
+                Our firm is built on trust, integrity, and results with
+                transparent communication and long-term client relationships.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRACTICE SECTION ===== -->
+
+  <section class="practice-area py-5">
+    <div class="container">
+      <!-- HEADING -->
+      <div class="practice-heading text-start mb-5">
+        <h2>Practice Areas</h2>
+
+        <span class="practice-line"></span>
+
+        <p >
+          We’re dedicated to offering comprehensive, expert Services tailored
+          to meet your specific needs. Our experienced attorneys deliver
+          practical, result-oriented legal solutions.
+        </p>
+      </div>
+
+      <!-- GRID -->
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" data-aos="fade-right">
+          <div class="practice-item">
+            <a href="trademark.html">Trademark & Copyright</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-right">
+          <div class="practice-item">
+            <a href="company-incorporation.html">Company Incorporation</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-right">
+          <div class="practice-item">
+            <a href="">Registration & Licenses</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-right">
+          <div class="practice-item"><a href="">Possession Complaint</a></div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-right">
+          <div class="practice-item"><a href="">Refund Complaint</a></div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-right">
+          <div class="practice-item">
+            <a href="">Compensation Complaint</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-right">
+          <div class="practice-item">
+            <a href="">Rera Agreement Drafting</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-right">
+          <div class="practice-item"><a href="">Civil Proceedings</a></div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-right">
+          <div class="practice-item"><a href="">Debt Settlement</a></div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-right">
+          <div class="practice-item"><a href="">Legal Consultation</a></div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-right">
+          <div class="practice-item"><a href="">Anti-Harassment</a></div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-right">
+          <div class="practice-item"><a href="">Debt Reduction</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section class="testimonials-section">
+    <div class="testimonials-container">
+      <div class="testimonials-heading">
+        <h2>Testimonials</h2>
+        <span class="test-line"></span>
+      </div>
+
+      <div class="testimonial-slider">
+        <div class="testimonial-track">
+          <!-- TESTIMONIAL 1 -->
+          <div class="testimonial-card">
+            <i class="fas fa-quote-left"></i>
+            <h4>Trustworthy Lawyer</h4>
+            <p>
+              From the initial consultation to final resolution, their
+              professionalism and dedication were evident throughout the
+              process.
+            </p>
+            <span>John D., Family Law Client</span>
+          </div>
+
+          <!-- TESTIMONIAL 2 -->
+          <div class="testimonial-card">
+            <i class="fas fa-quote-left"></i>
+            <h4>Highly Recommend</h4>
+            <p>
+              The attorneys took time to understand my concerns and created a
+              solid legal strategy that gave me confidence.
+            </p>
+            <span>Edward L., Estate Planning</span>
+          </div>
+
+          <!-- TESTIMONIAL 3 -->
+          <div class="testimonial-card">
+            <i class="fas fa-quote-left"></i>
+            <h4>Excellent Support</h4>
+            <p>
+              Clear communication, honest advice and strong representation.
+              Couldn’t have asked for better service.
+            </p>
+            <span>Maria S., Criminal Defense</span>
+          </div>
+
+          <!-- TESTIMONIAL 4 -->
+          <div class="testimonial-card">
+            <i class="fas fa-quote-left"></i>
+            <h4>Professional Team</h4>
+            <p>
+              Their legal expertise helped me navigate a complex matter
+              smoothly and efficiently.
+            </p>
+            <span>Alex R., Personal Injury</span>
+          </div>
+
+          <!-- TESTIMONIAL 5 -->
+          <div class="testimonial-card">
+            <i class="fas fa-quote-left"></i>
+            <h4>Very Reliable</h4>
+            <p>
+              I always felt informed and supported. The team truly cares about
+              client outcomes.
+            </p>
+            <span>Neha K., Corporate Client</span>
+          </div>
+
+          <!-- TESTIMONIAL 6 -->
+          <div class="testimonial-card">
+            <i class="fas fa-quote-left"></i>
+            <h4>Strong Legal Knowledge</h4>
+            <p>
+              Their understanding of Rera laws helped me recover my investment
+              without hassle.
+            </p>
+            <span>Rahul M., Rera Client</span>
+          </div>
+
+          <!-- TESTIMONIAL 7 -->
+          <div class="testimonial-card">
+            <i class="fas fa-quote-left"></i>
+            <h4>Great Experience</h4>
+            <p>Efficient, transparent and result-oriented Services.</p>
+            <span>Sunita P., Civil Case</span>
+          </div>
+
+          <!-- TESTIMONIAL 8 -->
+          <div class="testimonial-card">
+            <i class="fas fa-quote-left"></i>
+            <h4>Highly Skilled</h4>
+            <p>They handled my case with confidence and professionalism.</p>
+            <span>Amit S., Debt Settlement</span>
+          </div>
+
+          <!-- TESTIMONIAL 9 -->
+          <div class="testimonial-card">
+            <i class="fas fa-quote-left"></i>
+            <h4>Outstanding Service</h4>
+            <p>Their strategic approach made a big difference in my case.</p>
+            <span>Priya R., Legal Advisory</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DOTS -->
+      <div class="testimonial-dots"></div>
+    </div>
+  </section>
+
+  <!-- blog section -->
+  <!-- <section class="blog-section py-5">
+      <div class="container">
+        <div class="row g-4">
+
+          <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up">
+            <article class="blog-card">
+              <div class="blog-img">
+                <img src="images/legalimage.jpg" class="img-fluid" alt="" />
+                <span class="blog-date"><strong>10</strong> NOV</span>
+              </div>
+
+              <div class="blog-content">
+                <span class="blog-category">LAW FIRM</span>
+                <h3>Services</h3>
+                <p>
+                  Expert legal solutions tailored to protect your rights and
+                  interests across civil, corporate and advisory matters. Lorem
+                  ipsum dolor sit.
+                </p>
+                <span class="read-toggle">read more</span><br />
+                <span class="blog-author">Fynley Wilkinson</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up">
+            <article class="blog-card">
+              <div class="blog-img">
+                <img
+                  src="images/RERA Compliance.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <span class="blog-date"><strong>15</strong> NOV</span>
+              </div>
+
+              <div class="blog-content">
+                <span class="blog-category">LAW FIRM</span>
+                <h3>Rera Services</h3>
+                <p>
+                  Complete legal assistance for builders, developers and
+                  homebuyers under Rera regulations.
+                </p>
+                <span class="read-toggle">read more</span><br />
+                <span class="blog-author">Fynley Wilkinson</span>
+              </div>
+            </article>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up">
+            <article class="blog-card">
+              <div class="blog-img">
+                <img src="images/debt-settle.jpg" class="img-fluid" alt="" />
+                <span class="blog-date"><strong>20</strong> NOV</span>
+              </div>
+
+              <div class="blog-content">
+                <span class="blog-category">LAW FIRM</span>
+                <h3>Debt Settlement</h3>
+                <p>
+                  Relief from financial stress with structured and professional
+                  debt settlement solutions.
+                </p>
+                <span class="read-toggle">read more</span><br />
+                <span class="blog-author">Fynley Wilkinson</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="text-center">
+            <a href="blogs.html" class="frmsubmit">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+  <!-- whatsapp icon  start-->
+  <div class="call-icon">
+    <a href="tel:8368282220"><img src="images/icons8-call-48.png" alt="" /></a>
+  </div>
+  <div class="whatsapp-icon">
+    <a href="https://wa.me/8368282220" target="_blank"><img src="images/icons8-whatsapp-48.png" alt="" /></a>
+  </div>
+  <!-- whatsapp icon  end-->
+  <!-- FREE CONSULTATION start -->
+
+
+  <!-- FREE CONSULTATION end -->
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer pt-5" id="footer">
+  </footer>
+  <!-- <div class="blur-overlay"></div> -->
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    const text = document.querySelectorAll(".blog-content p");
+    const btns = document.querySelectorAll(".read-toggle");
+    btns.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        const text = this.previousElementSibling; // paragraph before button
+        text.classList.toggle("expanded");
+
+        if (text.classList.contains("expanded")) {
+          this.textContent = "read less";
+        } else {
+          this.textContent = "read more";
+        }
+      });
+    });
+
+    // testimonial slider
+    /* SET VISIBLE CARDS */
+    function setVisibleCards() {
+      if (window.innerWidth <= 576) {
+        visibleCards = 1; // Mobile
+      } else if (window.innerWidth <= 992) {
+        visibleCards = 2; // Tablet
+      } else {
+        visibleCards = 3; // Desktop
+      }
+    }
+
+    /* CREATE DOTS BASED ON VISIBLE CARDS */
+    function createDots() {
+      dotsContainer.innerHTML = "";
+      totalSlides = Math.ceil(cards.length / visibleCards);
+
+      for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement("span");
+        if (i === 0) dot.classList.add("active");
+        dot.addEventListener("click", () => {
+          indexTest = i;
+          updateSlider();
+        });
+        dotsContainer.appendChild(dot);
+      }
+    }
+
+    /* UPDATE SLIDER */
+    function updateSlider() {
+      const gap = 30;
+      const cardWidth = cards[0].offsetWidth + gap;
+      track.style.transform = `translateX(-${indexTest * cardWidth * visibleCards}px)`;
+
+      document
+        .querySelectorAll(".testimonial-dots span")
+        .forEach((dot) => dot.classList.remove("active"));
+
+      if (dotsContainer.children[indexTest]) {
+        dotsContainer.children[indexTest].classList.add("active");
+      }
+    }
+
+    /* AUTO SLIDE */
+    function startAutoSlide() {
+      clearInterval(autoSlideInterval);
+      autoSlideInterval = setInterval(() => {
+        indexTest = (indexTest + 1) % totalSlides;
+        updateSlider();
+      }, 4000);
+    }
+
+    /* INIT */
+    function initTestimonials() {
+      setVisibleCards();
+      indexTest = 0;
+      createDots();
+      updateSlider();
+      startAutoSlide();
+    }
+
+    initTestimonials();
+
+    /* RESIZE FIX */
+    window.addEventListener("resize", () => {
+      initTestimonials();
+    });
+  </script>
+</body>
+
+</html>

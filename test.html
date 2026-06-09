@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Premium Fixed Query Form</title>
+
+<style>
+
+:root {
+  --liteblue: #A66A4A;
+  --blue: #243E5C;
+  --white: #FFFFFF;
+  --darkblue:#825a44;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:200vh;
+    background:#f5f5f5;
+}
+
+
+/* =========================
+   FIXED FORM
+========================= */
+
+.law-fixed-form{
+
+    position:fixed;
+
+    right:15px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:240px;
+
+    background:#fff;
+
+    padding:16px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,.12);
+
+    z-index:9999;
+
+    transition:.4s ease;
+}
+
+
+/* HEADER */
+
+.law-form-head{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    margin-bottom:14px;
+}
+
+.law-form-head h5{
+
+    font-size:16px;
+    color:var(--blue);
+    font-weight:700;
+}
+
+
+/* CLOSE BUTTON */
+
+#lawCloseBtn{
+
+    width:26px;
+    height:26px;
+
+    background:#f1f1f1;
+
+    border-radius:50%;
+
+    display:none;
+
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    transition:.3s;
+}
+
+#lawCloseBtn:hover{
+    background:#e5e5e5;
+}
+
+
+/* INPUTS */
+
+.law-fixed-form input,
+.law-fixed-form textarea{
+
+    width:100%;
+
+    padding:11px 12px;
+
+    margin-bottom:10px;
+
+    border:none;
+
+    background:#f5f5f5;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:12px;
+
+    transition:.3s;
+}
+
+.law-fixed-form input:focus,
+.law-fixed-form textarea:focus{
+
+    background:#fff;
+
+    border:1px solid var(--liteblue);
+
+    box-shadow:
+    0 0 0 4px rgba(166,106,74,.08);
+}
+
+
+/* TEXTAREA */
+
+.law-fixed-form textarea{
+
+    height:70px;
+
+    resize:none;
+}
+
+
+/* BUTTON */
+
+.law-fixed-form button{
+
+    width:100%;
+
+    border:none;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    background:
+    linear-gradient(
+    135deg,
+    var(--blue),
+    var(--liteblue)
+    );
+
+    color:#fff;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.law-fixed-form button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 8px 20px rgba(36,62,92,.18);
+}
+
+
+/* =========================
+   QUERY BUTTON
+========================= */
+
+.law-query-btn{
+
+    position:fixed;
+
+    right:0;
+    top:50%;
+
+    transform:
+    translateY(-50%)
+    rotate(180deg);
+
+    writing-mode:vertical-rl;
+
+    background:
+    linear-gradient(
+    135deg,
+    var(--blue),
+    var(--liteblue)
+    );
+
+    color:#fff;
+
+    padding:14px 8px;
+
+    border-radius:
+    14px 0 0 14px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    z-index:9998;
+
+    display:none;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.15);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:992px){
+
+    .law-query-btn{
+        display:block;
+    }
+
+    .law-fixed-form{
+
+        right:-260px;
+    }
+
+    .law-fixed-form.active{
+
+        right:10px;
+    }
+
+    #lawCloseBtn{
+        display:flex;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- QUERY BUTTON -->
+
+<div class="law-query-btn" id="lawQueryBtn">
+    Query
+</div>
+
+
+
+<!-- FIXED FORM -->
+
+<div class="law-fixed-form" id="lawFixedForm">
+
+    <div class="law-form-head">
+
+        <h5>Free Consultation</h5>
+
+        <span id="lawCloseBtn">×</span>
+
+    </div>
+
+    <form>
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="tel" placeholder="Phone Number">
+
+        <textarea placeholder="Your Legal Query"></textarea>
+
+        <button type="submit">
+            Send Inquiry
+        </button>
+
+    </form>
+
+</div>
+
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    const queryBtn =
+    document.getElementById("lawQueryBtn");
+
+    const form =
+    document.getElementById("lawFixedForm");
+
+    const closeBtn =
+    document.getElementById("lawCloseBtn");
+
+    queryBtn.addEventListener("click", function(){
+
+        form.classList.add("active");
+
+    });
+
+    closeBtn.addEventListener("click", function(){
+
+        form.classList.remove("active");
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

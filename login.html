@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juris Solution | Login</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+<header id="header" class="sticky-top"></header>
+
+  <!-- login page -->
+  <section class="loginsec">
+    <div style="background-color: rgba(0, 0, 0, 0.6);">
+      <div class="container d-flex align-items-center justify-content-center py-5">
+        <div class="formdiv">
+
+          <div class=" imgsec text-center">
+            <img src="images/logo.png" alt="">
+            <div class="cent">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+
+
+
+          <!-- LOGIN -->
+          <div class="" id="SignIn">
+            <form class="loginform">
+              <input type="email" placeholder="Your Email">
+              <input type="password" placeholder="Your Password">
+
+              <a href="#" type="submit" class="frmsubmit">LOGIN</a>
+
+              <p class="acc">
+                Don't have account?
+                <a href="javascript:void(0)" onclick="showForm('SignUp')">Register now.</a>
+              </p>
+            </form>
+          </div>
+
+          <!-- REGISTER -->
+          <div class="" id="SignUp">
+            <form class="loginform">
+              <input type="text" placeholder="Enter Name">
+              <input type="tel" placeholder="Enter Mobile" name="" id="">
+              <input type="email" placeholder="Enter Email">
+              <input type="password" placeholder="Enter Password">
+
+              <a href="#" type="submit" class="frmsubmit">REGISTER</a>
+
+              <p class="acc">
+                Already have an account?
+                <a href="javascript:void(0)" onclick="showForm('SignIn')">Login.</a>
+              </p>
+            </form>
+          </div>
+
+          <script>
+            function showForm(formId) {
+
+              let signIn = document.getElementById("SignIn");
+              let signUp = document.getElementById("SignUp");
+
+              if (formId === "SignUp") {
+                signUp.style.display = "block";
+                signIn.style.display = "none";
+              } else {
+                signIn.style.display = "block";
+                signUp.style.display = "none";
+              }
+
+            }
+          </script>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- whatsapp icon  start-->
+  <div class="call-icon">
+        <a href="tel:8368282220"><img src="images/icons8-call-48.png" alt=""></a>
+    </div> 
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/8368282220" target="_blank"><img src="images/icons8-whatsapp-48.png" alt=""></a>
+    </div>
+  <!-- whatsapp icon  end-->
+  <!-- FREE CONSULTATION start -->
+
+  
+  <!-- FREE CONSULTATION end -->
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer"></footer>
+  <div class="blur-overlay"></div>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
